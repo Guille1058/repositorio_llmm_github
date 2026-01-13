@@ -15,8 +15,14 @@
             font-family: monospace;
             text-align: center;
         }
+        h1{
+            font-size: 70px;
+        }
+        p{
+            font-size: 20px;
+        }
         dialog{
-            padding-top: 50px;
+            padding: 50px;
             height: 200px;
             width: 200px;
             border-color: white;
@@ -54,11 +60,15 @@
 
 <body>
     <!--Ejercicio 1-->
+    <h1>Analizador de archivos V.1</h1>    
     <dialog id="mi_dialogo"> <!--Atributo +open+ / +close+ . Abren o cierran el cuadro de diálogo.-->
         <p>Este es un mensaje de una ventana de diálogo</p>
         <button id="cerrar">cerrar</button>
     </dialog>
-    <button id="abrir">Abrir diálogo</button>
+    <div>
+        <p>Pulsa para iniciar un diálogo aquí debajo:</p>
+        <button id="abrir">Abrir diálogo</button>
+    </div>    
     <script>
         const dialogo = document.getElementById("mi_dialogo");
         document.getElementById("abrir").onclick = () => dialogo.showModal();
