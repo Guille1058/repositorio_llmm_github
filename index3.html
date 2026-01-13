@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 50px;
+            background-color: rgba(218, 112, 214, 0.377);
+            font-family: monospace;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        p{
+            font-size: 40px;
+        }
+        h1{
+            font-size: 70px;
+            padding: 50px;
+        }
+        div{
+            width: auto;
+            height: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <!--Ejercicio 2-->
+    <h1>Object Dragger V.1</h1>
+    <div draggable="true" ondragstart="console.log('empezó el drag')" ondragend="console.log('Se soltó el elemento')" style="background:#4caf50;color:white;text-align:center;line-height:60px;">
+        <p>¡Arrastra para comprobar la magia!</p>
+    </div>
+</body>
+</html>
